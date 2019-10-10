@@ -1,18 +1,30 @@
 import java.util.*;
 
-public class p362 {
-	
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
+import java.util.Scanner;
+
+public class P362DiaNavidad {
+
+	public static void main(String[] args) {
+
+		int x, d, m;
 		
-		int ncasos = sc.nextInt();
-		int dia;
-		int mes;
+		Scanner teclado = new Scanner(System.in);
 
-		for(int i=0; i<ncasos; i++){
-			
-			
+		x = teclado.nextInt();
+		
+		while(x>0 ){
+
+			d = teclado.nextInt();
+			m = teclado.nextInt();
+		
+			if(d==25 &&m==12) {
+					System.out.println("SI");
+			}
+			else {
+				System.out.println("NO");
+			}
+			x--;
 		}
-
 	}
+
 }
